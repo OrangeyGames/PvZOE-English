@@ -1,0 +1,65 @@
+{"mc":{
+	"guaiwu3":{
+		"frameRate":9,
+		"labels":[
+			{"name":"walk","frame":1,"end":4}
+			,{"name":"death","frame":5,"end":8}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"enemy5_motion_000_png",
+			"x":-45,
+			"y":-49
+			},
+			{
+			"res":"enemy5_motion_001_png",
+			"x":-45,
+			"y":-48
+			},
+			{
+			"res":"enemy5_motion_002_png",
+			"x":-45,
+			"y":-50
+			},
+			{
+			"res":"enemy5_motion_003_png",
+			"x":-45,
+			"y":-48
+			},
+			{
+			"res":"enemy5_motion_012_png",
+			"x":-43,
+			"y":-65
+			},
+			{
+			"res":"enemy5_motion_013_png",
+			"x":-56,
+			"y":-62
+			},
+			{
+			"res":"enemy5_motion_014_png",
+			"x":-54,
+			"y":-68
+			},
+			{
+			"res":"enemy5_motion_015_png",
+			"x":-51,
+			"y":-73
+			}
+			]
+}},
+	"res":{
+		"enemy5_motion_002_png":{"x":84,"y":210,"w":95,"h":88},
+		"enemy5_motion_003_png":{"x":97,"y":300,"w":95,"h":86},
+		"enemy5_motion_012_png":{"x":0,"y":113,"w":82,"h":103},
+		"enemy5_motion_013_png":{"x":112,"y":108,"w":98,"h":100},
+		"enemy5_motion_001_png":{"x":97,"y":388,"w":95,"h":86},
+		"enemy5_motion_014_png":{"x":112,"y":0,"w":106,"h":106},
+		"enemy5_motion_000_png":{"x":0,"y":300,"w":95,"h":87},
+		"enemy5_motion_015_png":{"x":0,"y":0,"w":110,"h":111}
+	}}

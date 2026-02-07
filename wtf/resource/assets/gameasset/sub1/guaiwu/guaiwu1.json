@@ -1,0 +1,65 @@
+{"mc":{
+	"guaiwu1":{
+		"frameRate":9,
+		"labels":[
+			{"name":"walk","frame":1,"end":4}
+			,{"name":"death","frame":5,"end":8}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"enemy3_motion_000_png",
+			"x":-36,
+			"y":-24
+			},
+			{
+			"res":"enemy3_motion_001_png",
+			"x":-34,
+			"y":-23
+			},
+			{
+			"res":"enemy3_motion_002_png",
+			"x":-35,
+			"y":-24
+			},
+			{
+			"res":"enemy3_motion_003_png",
+			"x":-34,
+			"y":-24
+			},
+			{
+			"res":"enemy3_motion_012_png",
+			"x":-42,
+			"y":-40
+			},
+			{
+			"res":"enemy3_motion_013_png",
+			"x":-39,
+			"y":-54
+			},
+			{
+			"res":"enemy3_motion_014_png",
+			"x":-42,
+			"y":-32
+			},
+			{
+			"res":"enemy3_motion_015_png",
+			"x":-42,
+			"y":-12
+			}
+			]
+}},
+	"res":{
+		"enemy3_motion_000_png":{"x":104,"y":134,"w":70,"h":53},
+		"enemy3_motion_012_png":{"x":101,"y":0,"w":95,"h":69},
+		"enemy3_motion_003_png":{"x":69,"y":189,"w":64,"h":53},
+		"enemy3_motion_014_png":{"x":101,"y":71,"w":102,"h":61},
+		"enemy3_motion_013_png":{"x":0,"y":0,"w":99,"h":83},
+		"enemy3_motion_015_png":{"x":0,"y":134,"w":102,"h":41},
+		"enemy3_motion_001_png":{"x":0,"y":177,"w":67,"h":52},
+		"enemy3_motion_002_png":{"x":176,"y":134,"w":66,"h":53}
+	}}

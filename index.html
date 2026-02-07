@@ -3,80 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Berry PvZ's PvZ Mini-program Archival Page!</title>
+<title>PvZ Mini-program Archive</title>
 
 <style>
-/* Global */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     background: linear-gradient(180deg, #0b6fdc 0%, #004080 55%, #001428 100%);
     color: white;
     margin: 0;
-    padding: 0;
 }
 
-/* Header */
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: linear-gradient(to right, #004080, #001f40);
     padding: 15px 0;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
 }
+
 header h1 {
     font-size: 2.5em;
     color: #ffcc00;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     margin: 0;
 }
 
-/* Section titles */
 .section-title {
     font-size: 2em;
     margin: 40px 0 10px;
     color: #ffcc00;
-    text-shadow: 2px 2px 4px rgba(0,0,0,.6);
 }
 
-/* Contributors Button */
-.contributors-btn {
-    margin-top: 10px;
-    background: linear-gradient(to bottom, #ffc400, #c69a00);
-    border: none;
-    padding: 10px 22px;
-    border-radius: 6px;
-    color: #1a1a1a;
-    font-weight: bold;
-    cursor: pointer;
-}
-.contributors-btn:hover {
-    background: linear-gradient(to bottom, #ffdb4d, #d4aa00);
-}
-
-/* Cards */
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 30px auto;
     max-width: 1200px;
+    margin: auto;
 }
+
 .card {
     background: linear-gradient(to bottom, #00284d, #001730);
     border-radius: 10px;
     margin: 15px;
     padding: 20px;
     width: 250px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 16px rgba(0,0,0,.3);
 }
-.card h3 {
-    color: #ffcc00;
-}
-.card p {
-    color: #ccc;
-}
+
+.card h3 { color: #ffcc00; }
+.card p { color: #ccc; }
+
 .card button {
     background: linear-gradient(to bottom, #28a745, #19692c);
     border: none;
@@ -84,90 +59,55 @@ header h1 {
     border-radius: 5px;
     color: white;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    transition: all .3s ease;
-}
-.card button:hover {
-    background: linear-gradient(to bottom, #34d058, #22863a);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
 }
 
-/* Fullscreen overlay */
+.top-btn {
+    margin: 10px;
+    background: linear-gradient(to bottom, #ffc400, #c69a00);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 #fullscreen {
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.85);
+    background: rgba(0,0,0,.85);
     z-index: 9999;
 }
 
-/* Now playing */
-#now-playing-bar {
+#now-playing {
     position: absolute;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    background: linear-gradient(to bottom, #d7e6ff, #a8c4f0);
-    border: 2px solid #4a70c0;
-    border-radius: 6px;
+    background: #d7e6ff;
     padding: 6px 12px;
+    border-radius: 6px;
     color: #00245c;
     font-weight: bold;
-    z-index: 10001;
 }
 
-/* Buttons */
-.fullscreen-left-btn {
+.ctrl-btn {
     position: absolute;
-    left: 20px;
     top: 20px;
-    background: linear-gradient(to bottom, #4da3ff, #005cd1);
     border: none;
-    padding: 10px 14px;
     border-radius: 6px;
-    color: white;
-    font-size: 1.3em;
+    padding: 10px;
     cursor: pointer;
-}
-.fullscreen-left-btn:hover {
-    background: linear-gradient(to bottom, #73b8ff, #0068ee);
+    font-size: 1.2em;
 }
 
-.download-btn {
-    position: absolute;
-    left: 75px;
-    top: 20px;
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    background: linear-gradient(to bottom, #34d058, #1e7f3b);
-    border: none;
-    color: white;
-    font-size: 1.4em;
-    cursor: pointer;
-}
-.download-btn:hover {
-    background: linear-gradient(to bottom, #4ae168, #24914a);
-}
+#fsBtn { left: 20px; background: #4da3ff; }
+#rotateBtn { left: 80px; background: #ff9800; }
+#downloadBtn { left: 140px; background: #34d058; }
+#tabBtn { left: 200px; background: #9c27b0; color: white; }
+#closeBtn { right: 20px; background: red; color: white; }
 
-.close-btn {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    width: 40px;
-    height: 40px;
-    background: red;
-    border-radius: 50%;
-    border: none;
-    color: white;
-    font-size: 1.5em;
-    cursor: pointer;
-}
-.close-btn:hover {
-    background: darkred;
-}
 
-/* Game iframe */
 #game-frame {
     position: absolute;
     top: 50%;
@@ -178,7 +118,16 @@ header h1 {
     border: none;
 }
 
-/* Contributors panel */
+.portrait {
+  width: 50vh !important;
+  height: 50vw !important;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+#game-frame {
+  transform-origin: center center;
+}
+
 #contributorsPanel {
     position: fixed;
     top: 0;
@@ -188,29 +137,20 @@ header h1 {
     background: linear-gradient(to bottom, #00284d, #001730);
     border-left: 2px solid #ffcc00;
     transition: right .4s ease;
-    z-index: 99999;
+    z-index: 10000;
     display: flex;
     flex-direction: column;
 }
-#contributorsPanel.active {
-    right: 0;
-}
+#contributorsPanel.active { right: 0; }
+
 #contributorsPanel h2 {
     color: #ffcc00;
     padding: 20px;
     margin: 0;
-    border-bottom: 1px solid rgba(255,204,0,.3);
 }
 
-.contributors-iframe {
-    flex: 1;
-    width: 100%;
-    height: 100%;
-    border: none;
-    background: #001730;
-}
+.contributors-iframe { flex: 1; border: none; }
 
-/* Overlay */
 .overlay {
     position: fixed;
     inset: 0;
@@ -218,147 +158,196 @@ header h1 {
     display: none;
     z-index: 9000;
 }
-.overlay.active {
-    display: block;
-}
+.overlay.active { display: block; }
 
-/* Footer */
-.footer-links {
-    margin-top: 40px;
-}
-.footer-link {
-    display: inline-block;
-    margin: 10px 20px;
-    padding: 10px 18px;
-    background: rgba(0,0,0,.25);
-    border-radius: 6px;
-    color: #ffcc00;
-    font-weight: bold;
-    text-decoration: none;
-}
-.footer-link:hover {
-    background: rgba(0,0,0,.4);
-}
+footer { margin: 40px 0; }
 </style>
 </head>
 
 <body>
 
 <header>
-    <h1>Berry PVZ's PvZ Mini-program Archival Page!</h1>
+  <h1 data-i18n="title"></h1>
 </header>
 
-<button class="contributors-btn" id="contributorsBtn">View Contributors</button>
+<button class="top-btn" onclick="setLang('en')">EN</button>
+<button class="top-btn" onclick="setLang('zh')">中文</button>
+<button class="top-btn" id="contributorsBtn" data-i18n="contributors"></button>
 
-<div class="section-title">GAMES</div>
+<div class="section-title" data-i18n="games"></div>
 <div class="container">
-    <div class="card"><h3>Tower of Overwatch</h3><p>Kinda a rebrand??</p><button onclick="openGame('too','./too/index.html')">Play</button></div>
-    <div class="card"><h3>Plant Eliminate Zombie</h3><p>PvZ OE rebrand 1...</p><button onclick="openGame('pez','./pez/index.html')">Play</button></div>
-    <div class="card"><h3>Plant Hybrid</h3><p>Hybrid Edition content!</p><button onclick="openGame('ph','./ph/index.html')">Play</button></div>
-    <div class="card"><h3>PvZOE</h3><p>The original OE!!!!!!</p><button onclick="openGame('oe','./oe/index.html')">Play</button></div>
-    <div class="card"><h3>WEIRD amalgated OE</h3><p>Weirdest OE variation...</p><button onclick="openGame('weirdoe','./weirdoe/index.html')">Play</button></div>
-    <div class="card"><h3>PvZ2 Evolve</h3><p>Not to be confused with PVZ3 EVOLVED, but is a crappy game, and is the base of OE!</p><button onclick="openGame('evolve','./evolve/index.html')">Play</button></div>
+  <div class="card"><h3 data-i18n="too_title"></h3><p data-i18n="too_desc"></p><button data-i18n="play" onclick="openGame('too','./too/index.html')"></button></div>
+  <div class="card"><h3 data-i18n="pez_title"></h3><p data-i18n="pez_desc"></p><button data-i18n="play" onclick="openGame('pez','./pez/index.html')"></button></div>
+  <div class="card"><h3 data-i18n="ph_title"></h3><p data-i18n="ph_desc"></p><button data-i18n="play" onclick="openGame('ph','./ph/index.html')"></button></div>
+  <div class="card"><h3 data-i18n="oe_title"></h3><p data-i18n="oe_desc"></p><button data-i18n="play" onclick="openGame('oe','./oe/index.html')"></button></div>
+  <div class="card"><h3 data-i18n="weirdoe_title"></h3><p data-i18n="weirdoe_desc"></p><button data-i18n="play" onclick="openGame('weirdoe','./weirdoe/index.html')"></button></div>
+  <div class="card"><h3 data-i18n="evolve_title"></h3><p data-i18n="evolve_desc"></p><button data-i18n="play" onclick="openGame('evolve','./evolve/index.html')"></button></div>
 </div>
 
-<div class="section-title">MODS</div>
+<div class="section-title" data-i18n="mods"></div>
 <div class="container">
-        <div class="card"><h3>CALM CHUCK OE</h3><p>first public oe mod!</p><button onclick="openGame('chuckoe','./chuckoe/index.html')">Play</button></div>
-    </div>
-</div>
-<div class="section-title" style="color: red">⚠️DANGER ZONE⚠️ <br> these builds have been manually archived through cache, some assets may be missing.</div>
-<div class="container">
-    <div class="card"><h3>BETA OE</h3><p>Beta version of OE!</p><button onclick="openGame('betaoe','./betaoe/index.html')">Play</button></div>
-    <div class="card"><h3>ALPHA OE</h3><p>Alpha version of OE!</p><button onclick="openGame('alphaoe','./alphaoe/index.html')">Play</button></div>
-    <div class="card"><h3>EARLY OE</h3><p>Earlier version of OE!</p><button onclick="openGame('earlyoe','./earlyoe/index.html')">Play</button></div>
-    <div class="card"><h3>v37 OE</h3><p>Last build archived to feature EE styled level picker!</p><button onclick="openGame('v37','./v37/index.html')">Play</button></div>
-    <div class="card"><h3>PVZ2 HEROES</h3><p>Not to be confused with PVZ heroes, but is a crappy game.</p><button onclick="openGame('heroes','./heroes/index.html')">Play</button></div>
-
-    </div>
+  <div class="card"><h3 data-i18n="chuck_title"></h3><p data-i18n="chuck_desc"></p><button data-i18n="play" onclick="openGame('chuckoe','./chuckoe/index.html')"></button></div>
 </div>
 
-<div id="fullscreen">
-    <div id="now-playing-bar">Now Playing: Nothing</div>
-    <button class="fullscreen-left-btn" onclick="toggleFullscreen()">⛶</button>
-    <button class="download-btn" onclick="downloadCurrent()">⬇</button>
-    <button class="close-btn" onclick="closeGame()">X</button>
-    <iframe id="game-frame"></iframe>
+<div class="section-title" style="color:red" data-i18n="danger"></div>
+<div class="container">
+  <div class="card"><h3 data-i18n="beta_title"></h3><p data-i18n="beta_desc"></p><button data-i18n="play" onclick="openGame('betaoe','./betaoe/index.html')"></button></div>
+  <div class="card"><h3 data-i18n="alpha_title"></h3><p data-i18n="alpha_desc"></p><button data-i18n="play" onclick="openGame('alphaoe','./alphaoe/index.html')"></button></div>
+  <div class="card"><h3 data-i18n="early_title"></h3><p data-i18n="early_desc"></p><button data-i18n="play" onclick="openGame('earlyoe','./earlyoe/index.html')"></button></div>
+  <div class="card"><h3 data-i18n="v37_title"></h3><p data-i18n="v37_desc"></p><button data-i18n="play" onclick="openGame('v37','./v37/index.html')"></button></div>
+  <div class="card"><h3 data-i18n="heroes_title"></h3><p data-i18n="heroes_desc"></p><button data-i18n="play" onclick="openGame('heroes','./heroes/index.html')"></button></div>
+  <div class="card"><h3 data-i18n="pvz3d_title"></h3><p data-i18n="pvz3d_desc"></p><button data-i18n="play" onclick="openGame('pvz3d','./pvz3d/index.html')"></button></div>
+  <div class="card"><h3 data-i18n="wtf_title"></h3><p data-i18n="wtf_desc"></p><button data-i18n="play" onclick="openGame('wtf','./wtf/index.html')"></button></div>
 </div>
 
 <div id="contributorsPanel">
-    <h2>Contributors</h2>
-    <iframe class="contributors-iframe" src="./credits/index.html"></iframe>
+  <h2 data-i18n="contributors"></h2>
+  <iframe class="contributors-iframe" src="./credits/index.html"></iframe>
 </div>
-
 <div class="overlay" id="overlay"></div>
 
-<footer>
-<div class="footer-links">
-    <a class="footer-link" target="_blank" href="https://docs.google.com/document/d/1CASrfSApstFxOTG5DsNK49VwQjpr5XYBAuFrdROgaMk/edit">HOW TO VIEW OE ANIMS DOC</a>
-    <a class="footer-link" target="_blank" href="https://docs.google.com/spreadsheets/d/1HrB92k520Ht0BGi6Nw98-734iOe0EY9aj1XPS8kdiUg/edit">OE ARCHIVAL DOC</a>
-    <a class="footer-link" target="_blank" href="https://mega.nz/folder/opwEGZLJ#p-4GvJPo0qHrrGINbyX2Mw/folder/ZhhGBZhb">LOCALHOST GUIDES BY TABLET PRO</a>
+<div id="fullscreen">
+  <div id="now-playing"></div>
+  <button id="fsBtn" class="ctrl-btn" onclick="toggleFullscreen()">⛶</button>
+  <button id="rotateBtn" class="ctrl-btn" onclick="toggleOrientation()">⟳</button>
+  <button id="tabBtn" class="ctrl-btn" onclick="openNewTab()">↗</button>
+  <button id="closeBtn" class="ctrl-btn" onclick="closeGame()">X</button>
+  <button id="downloadBtn" class="ctrl-btn" onclick="downloadCurrent()">⬇</button>
+  <iframe id="game-frame"></iframe>
 </div>
-</footer>
+
 
 <script>
-const fullscreenEl = document.getElementById("fullscreen");
-const gameFrame = document.getElementById("game-frame");
-const nowPlayingBar = document.getElementById("now-playing-bar");
+const TEXT = {
+  en: {
+    title: "Berry PVZ's PvZ Mini-program Archival Page!",
+    contributors: "Contributors",
+    games: "GAMES",
+    mods: "MODS",
+    danger: "⚠️ DANGER ZONE ⚠️ These builds were archived from cache and may be incomplete.",
+    play: "Play",
+    now: "Now Playing:",
+    too_title: "Tower of Overwatch", too_desc: "Kinda a rebrand??",
+    pez_title: "Plant Eliminate Zombie", pez_desc: "PvZ OE rebrand 1...",
+    ph_title: "Plant Hybrid", ph_desc: "Hybrid Edition content!",
+    oe_title: "PvZOE", oe_desc: "The original OE!!!!!!",
+    weirdoe_title: "WEIRD amalgated OE", weirdoe_desc: "Weirdest OE variation...",
+    evolve_title: "PvZ2 Evolve", evolve_desc: "Crappy game, base of OE.",
+    chuck_title: "CALM CHUCK OE", chuck_desc: "First public OE mod!",
+    beta_title: "BETA OE", beta_desc: "Beta version of OE!",
+    alpha_title: "ALPHA OE", alpha_desc: "Alpha version of OE!",
+    early_title: "EARLY OE", early_desc: "Earlier version of OE!",
+    v37_title: "v37 OE", v37_desc: "EE-style level picker build.",
+    heroes_title: "PVZ2 HEROES", heroes_desc: "Not to be confused with PvZ Heroes, but is a crappy game.",
+    pvz3d_title: "PvZ3D", pvz3d_desc: "Not to be confused with PvZ 3, but is a crappy game.",
+    wtf_title: "???", wtf_desc: "WTF"
+  },
+  zh: {
+    title: "Berry PVZ 的 PvZ 小程序存档页面！",
+    contributors: "贡献者",
+    games: "游戏",
+    mods: "模组",
+    danger: "⚠️ 危险区域 ⚠️ 这些版本通过缓存存档，可能不完整。",
+    play: "游玩",
+    now: "正在游玩：",
+    too_title: "守望塔", too_desc: "算是一次改名？",
+    pez_title: "植物消灭僵尸", pez_desc: "PvZ OE 的第一次改版……",
+    ph_title: "植物混合版", ph_desc: "混合版内容！",
+    oe_title: "PvZOE", oe_desc: "最原始的 OE！！！",
+    weirdoe_title: "奇怪的混合 OE", weirdoe_desc: "最诡异的 OE 变体……",
+    evolve_title: "PvZ2 Evolve", evolve_desc: "很烂的游戏，也是 OE 的基础。",
+    chuck_title: "CALM CHUCK OE", chuck_desc: "第一个公开的 OE 模组！",
+    beta_title: "OE 测试版", beta_desc: "Beta 版本！",
+    alpha_title: "OE Alpha 版", alpha_desc: "早期 Alpha。",
+    early_title: "早期 OE", early_desc: "更早期版本。",
+    v37_title: "v37 OE", v37_desc: "EE 风格选关。",
+    heroes_title: "PVZ2 HEROES", heroes_desc: "不是 PvZ Heroes。",
+    pvz3d_title: "PvZ3D", pvz3d_desc: "不要把它和《植物大战僵尸3》混淆，这是一款糟糕的游戏。",
+    wtf_title: "WTF", wtf_desc: "WTF"
+  }
+};
+const GAME_ZIPS = {
+  too: "./too.zip",
+  pez: "./pez.zip",
+  ph: "./ph.zip",
+  oe: "./oe.zip",
+  weirdoe: "./weirdoe.zip",
+  evolve: "./evolve.zip",
+  chuckoe: "./chuckoe.zip",
+  betaoe: "./betaoe.zip",
+  alphaoe: "./alphaoe.zip",
+  earlyoe: "./earlyoe.zip",
+  v37: "./v37.zip",
+  heroes: "./heroes.zip",
+  pvz3d: "./pvz3d.zip",
+  wtf: "./wtf.zip"
+};
+
+const frame = document.getElementById("game-frame");
+const fs = document.getElementById("fullscreen");
+const now = document.getElementById("now-playing");
 const contributorsBtn = document.getElementById("contributorsBtn");
 const contributorsPanel = document.getElementById("contributorsPanel");
 const overlay = document.getElementById("overlay");
 
-let currentGameKey = null;
+let currentURL = "";
+let lang = "en";
+let portrait = false;
 
-const GAME_ZIPS = {
-    too: "./too.zip",
-    pez: "./pez.zip",
-    ph: "./ph.zip",
-    oe: "./oe.zip",
-    weirdoe: "./weirdoe.zip",
-    betaoe: "./betaoe.zip",
-    alphaoe: "./alphaoe.zip",
-    earlyoe: "./earlyoe.zip",
-    v37: "./v37.zip",
-    chuckoe: "./chuckoe.zip",
-    evolve: "./evolve.zip",
-    heroes: "./heroes.zip"
-};
-
-function openGame(key, url) {
-    currentGameKey = key;
-    gameFrame.src = url;
-    nowPlayingBar.textContent = "Now Playing: " + key.toUpperCase();
-    fullscreenEl.style.display = "block";
+function setLang(l) {
+  lang = l;
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    el.textContent = TEXT[l][el.dataset.i18n];
+  });
 }
 
-function toggleFullscreen() {
-    if (!document.fullscreenElement) {
-        gameFrame.requestFullscreen().catch(()=>{});
-    } else {
-        document.exitFullscreen();
-    }
+function openGame(key, url) {
+  currentURL = url;
+  frame.src = url;
+  now.textContent = TEXT[lang].now + " " + key.toUpperCase();
+  fs.style.display = "block";
 }
 
 function closeGame() {
-    gameFrame.src = "";
-    fullscreenEl.style.display = "none";
-    currentGameKey = null;
+  frame.src = "";
+  fs.style.display = "none";
 }
 
-function downloadCurrent() {
-    if (currentGameKey && GAME_ZIPS[currentGameKey]) {
-        window.open(GAME_ZIPS[currentGameKey], "_blank");
-    }
+function toggleFullscreen() {
+  if (!document.fullscreenElement) frame.requestFullscreen();
+  else document.exitFullscreen();
+}
+
+function toggleOrientation() {
+  portrait = !portrait;
+  frame.classList.toggle("portrait", portrait);
+}
+
+function openNewTab() {
+  if (currentURL) window.open(currentURL, "_blank");
 }
 
 contributorsBtn.onclick = () => {
-    contributorsPanel.classList.add("active");
-    overlay.classList.add("active");
+  contributorsPanel.classList.add("active");
+  overlay.classList.add("active");
 };
+
 overlay.onclick = () => {
-    contributorsPanel.classList.remove("active");
-    overlay.classList.remove("active");
+  contributorsPanel.classList.remove("active");
+  overlay.classList.remove("active");
 };
+function downloadCurrent() {
+  if (!currentURL) return;
+
+  const key = Object.keys(GAME_ZIPS).find(k =>
+    currentURL.includes("/" + k + "/")
+  );
+
+  if (key && GAME_ZIPS[key]) {
+    window.open(GAME_ZIPS[key], "_blank");
+  }
+}
+setLang("en");
 </script>
 
 </body>

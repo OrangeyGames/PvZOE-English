@@ -1,0 +1,1 @@
+window.screenOrientation="portrait",loadLib("libs/laya.core.js"),loadLib("libs/laya.ani.js"),loadLib("libs/laya.ui.js"),loadLib("libs/laya.d3.js"),loadLib("libs/jszip.min.js"),loadLib("js/thinkingdata.mg.js"),loadLib("js/bundle.js");

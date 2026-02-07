@@ -1,0 +1,18 @@
+{
+	"initial": [
+		"js/egret.min_836d668b.js",
+		"js/egret.web.min_fb14c841.js",
+		"js/eui.min_493403ce.js",
+		"js/assetsmanager.min_2ef412b7.js",
+		"js/tween.min_6c5a88f9.js",
+		"js/dragonBones.min_6252b9c4.js",
+		"js/game.min_a9c9e7a1.js",
+		"js/promise.min_83a6a5d.js",
+		"js/spine-egret-runtimes.min_e2236adf.js"
+	],
+	"game": [
+		"js/particle.min_d5bd9db2.js",
+		"js/default.thm_c123d66e.js",
+		"js/main.min_be4224e0.js"
+	]
+}
