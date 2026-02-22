@@ -1,0 +1,153 @@
+
+1004_tudoudilei.png
+size: 173,268
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+beijing_01
+  rotate: false
+  xy: 66, 4
+  size: 65, 24
+  orig: 65, 24
+  offset: 0, 0
+  index: -1
+dingshi_01
+  rotate: false
+  xy: 148, 166
+  size: 23, 23
+  orig: 23, 23
+  offset: 0, 0
+  index: -1
+dingshi_02
+  rotate: false
+  xy: 148, 141
+  size: 23, 23
+  orig: 23, 23
+  offset: 0, 0
+  index: -1
+nitu_01
+  rotate: true
+  xy: 66, 39
+  size: 25, 16
+  orig: 25, 16
+  offset: 0, 0
+  index: -1
+nitu_02
+  rotate: false
+  xy: 84, 30
+  size: 75, 18
+  orig: 75, 18
+  offset: 0, 0
+  index: -1
+nitu_03
+  rotate: true
+  xy: 2, 2
+  size: 20, 21
+  orig: 20, 21
+  offset: 0, 0
+  index: -1
+nitu_04
+  rotate: true
+  xy: 47, 16
+  size: 48, 17
+  orig: 48, 17
+  offset: 0, 0
+  index: -1
+nitu_05
+  rotate: true
+  xy: 140, 191
+  size: 75, 30
+  orig: 75, 30
+  offset: 0, 0
+  index: -1
+shenti_01
+  rotate: false
+  xy: 80, 139
+  size: 66, 42
+  orig: 66, 42
+  offset: 0, 0
+  index: -1
+shenti_02
+  rotate: false
+  xy: 2, 24
+  size: 43, 40
+  orig: 43, 40
+  offset: 0, 0
+  index: -1
+shitou_01
+  rotate: false
+  xy: 140, 186
+  size: 3, 3
+  orig: 3, 3
+  offset: 0, 0
+  index: -1
+shitou_02
+  rotate: false
+  xy: 43, 3
+  size: 12, 11
+  orig: 12, 11
+  offset: 0, 0
+  index: -1
+shitou_03
+  rotate: true
+  xy: 133, 19
+  size: 9, 10
+  orig: 9, 10
+  offset: 0, 0
+  index: -1
+yanjing_l_01
+  rotate: false
+  xy: 84, 50
+  size: 12, 14
+  orig: 12, 14
+  offset: 0, 0
+  index: -1
+yanjing_r_01
+  rotate: true
+  xy: 66, 30
+  size: 7, 10
+  orig: 7, 10
+  offset: 0, 0
+  index: -1
+yanwu_01
+  rotate: true
+  xy: 80, 183
+  size: 83, 58
+  orig: 83, 59
+  offset: 0, 1
+  index: -1
+yanwu_02
+  rotate: true
+  xy: 108, 54
+  size: 83, 58
+  orig: 83, 59
+  offset: 0, 0
+  index: -1
+yanwu_03
+  rotate: false
+  xy: 2, 66
+  size: 104, 69
+  orig: 104, 69
+  offset: 0, 0
+  index: -1
+yanwu_04
+  rotate: true
+  xy: 2, 137
+  size: 129, 76
+  orig: 129, 76
+  offset: 0, 0
+  index: -1
+zhijia_01
+  rotate: false
+  xy: 25, 4
+  size: 16, 18
+  orig: 16, 18
+  offset: 0, 0
+  index: -1
+zui_01
+  rotate: true
+  xy: 98, 53
+  size: 11, 8
+  orig: 11, 8
+  offset: 0, 0
+  index: -1

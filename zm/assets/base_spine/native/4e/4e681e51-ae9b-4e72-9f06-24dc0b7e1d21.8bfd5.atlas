@@ -1,0 +1,104 @@
+
+kaichangmanhua_aiji.png
+size: 1923,1750
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+2
+  rotate: true
+  xy: 1754, 416
+  size: 216, 165
+  orig: 216, 165
+  offset: 0, 0
+  index: -1
+222
+  rotate: false
+  xy: 721, 626
+  size: 720, 504
+  orig: 720, 504
+  offset: 0, 0
+  index: -1
+334
+  rotate: false
+  xy: 2, 70
+  size: 722, 431
+  orig: 722, 431
+  offset: 0, 0
+  index: -1
+444
+  rotate: false
+  xy: 2, 1121
+  size: 717, 627
+  orig: 717, 627
+  offset: 0, 0
+  index: -1
+baohudaifu
+  rotate: false
+  xy: 1754, 64
+  size: 126, 143
+  orig: 126, 143
+  offset: 0, 0
+  index: -1
+chonga
+  rotate: true
+  xy: 1754, 209
+  size: 205, 167
+  orig: 205, 167
+  offset: 0, 0
+  index: -1
+en
+  rotate: false
+  xy: 1754, 2
+  size: 89, 60
+  orig: 89, 60
+  offset: 0, 0
+  index: -1
+jiangshi
+  rotate: false
+  xy: 1427, 1132
+  size: 466, 616
+  orig: 466, 621
+  offset: 0, 0
+  index: -1
+suduxian1
+  rotate: false
+  xy: 721, 1132
+  size: 704, 616
+  orig: 704, 616
+  offset: 0, 0
+  index: -1
+suduxian2
+  rotate: false
+  xy: 726, 11
+  size: 706, 613
+  orig: 706, 613
+  offset: 0, 0
+  index: -1
+suduxian3
+  rotate: false
+  xy: 2, 503
+  size: 705, 616
+  orig: 705, 616
+  offset: 0, 0
+  index: -1
+ui_ready_laixi
+  rotate: false
+  xy: 2, 24
+  size: 414, 44
+  orig: 414, 44
+  offset: 0, 0
+  index: -1
+weilenaozi
+  rotate: true
+  xy: 1443, 634
+  size: 496, 463
+  orig: 496, 463
+  offset: 0, 0
+  index: -1
+zhiwu
+  rotate: false
+  xy: 1434, 19
+  size: 318, 605
+  orig: 318, 605
+  offset: 0, 0
+  index: -1

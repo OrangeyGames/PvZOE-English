@@ -1,0 +1,181 @@
+
+1094_tanhuangdou.png
+size: 999,205
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Z
+  rotate: false
+  xy: 921, 4
+  size: 28, 32
+  orig: 28, 32
+  offset: 0, 0
+  index: -1
+huichen
+  rotate: false
+  xy: 2, 6
+  size: 522, 197
+  orig: 550, 197
+  offset: 18, 0
+  index: -1
+shenti1
+  rotate: true
+  xy: 842, 100
+  size: 103, 130
+  orig: 103, 130
+  offset: 0, 0
+  index: -1
+shenti11
+  rotate: false
+  xy: 526, 7
+  size: 84, 41
+  orig: 84, 41
+  offset: 0, 0
+  index: -1
+shenti2
+  rotate: false
+  xy: 740, 8
+  size: 68, 116
+  orig: 68, 116
+  offset: 0, 0
+  index: -1
+shenti22
+  rotate: true
+  xy: 810, 60
+  size: 64, 29
+  orig: 64, 29
+  offset: 0, 0
+  index: -1
+shenti3
+  rotate: false
+  xy: 526, 50
+  size: 212, 74
+  orig: 212, 74
+  offset: 0, 0
+  index: -1
+shenti33
+  rotate: false
+  xy: 846, 38
+  size: 50, 24
+  orig: 50, 24
+  offset: 0, 0
+  index: -1
+shitou1
+  rotate: false
+  xy: 959, 71
+  size: 23, 20
+  orig: 23, 20
+  offset: 0, 0
+  index: -1
+shitou2
+  rotate: false
+  xy: 810, 2
+  size: 16, 14
+  orig: 16, 14
+  offset: 0, 0
+  index: -1
+texiao
+  rotate: false
+  xy: 526, 126
+  size: 314, 77
+  orig: 316, 80
+  offset: 1, 1
+  index: -1
+ui_mission_touying
+  rotate: true
+  xy: 974, 93
+  size: 110, 23
+  orig: 110, 23
+  offset: 0, 0
+  index: -1
+weiba
+  rotate: false
+  xy: 883, 69
+  size: 41, 29
+  orig: 41, 29
+  offset: 0, 0
+  index: -1
+yanpi1
+  rotate: false
+  xy: 849, 4
+  size: 39, 20
+  orig: 39, 20
+  offset: 0, 0
+  index: -1
+yanpi2
+  rotate: true
+  xy: 810, 18
+  size: 40, 34
+  orig: 40, 34
+  offset: 0, 0
+  index: -1
+youyan
+  rotate: false
+  xy: 612, 5
+  size: 40, 43
+  orig: 40, 43
+  offset: 0, 0
+  index: -1
+youyan1
+  rotate: false
+  xy: 841, 64
+  size: 40, 34
+  orig: 40, 34
+  offset: 0, 0
+  index: -1
+youyan2
+  rotate: false
+  xy: 890, 5
+  size: 29, 31
+  orig: 29, 31
+  offset: 0, 0
+  index: -1
+youyan3
+  rotate: true
+  xy: 898, 38
+  size: 29, 31
+  orig: 29, 31
+  offset: 0, 0
+  index: -1
+zui
+  rotate: false
+  xy: 828, 5
+  size: 19, 11
+  orig: 19, 11
+  offset: 0, 0
+  index: -1
+zui3
+  rotate: false
+  xy: 846, 26
+  size: 7, 10
+  orig: 7, 10
+  offset: 0, 0
+  index: -1
+zuoyan
+  rotate: true
+  xy: 926, 69
+  size: 29, 31
+  orig: 29, 31
+  offset: 0, 0
+  index: -1
+zuoyan1
+  rotate: false
+  xy: 931, 42
+  size: 30, 25
+  orig: 30, 25
+  offset: 0, 0
+  index: -1
+zuoyan2
+  rotate: false
+  xy: 654, 5
+  size: 40, 43
+  orig: 40, 43
+  offset: 0, 0
+  index: -1
+zuoyan3
+  rotate: false
+  xy: 696, 5
+  size: 40, 43
+  orig: 40, 43
+  offset: 0, 0
+  index: -1

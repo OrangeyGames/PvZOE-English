@@ -182,6 +182,8 @@ footer { margin: 40px 0; }
   <div class="card"><h3 data-i18n="oe_title"></h3><p data-i18n="oe_desc"></p><button data-i18n="play" onclick="openGame('oe','./oe/index.html')"></button></div>
   <div class="card"><h3 data-i18n="weirdoe_title"></h3><p data-i18n="weirdoe_desc"></p><button data-i18n="play" onclick="openGame('weirdoe','./weirdoe/index.html')"></button></div>
   <div class="card"><h3 data-i18n="evolve_title"></h3><p data-i18n="evolve_desc"></p><button data-i18n="play" onclick="openGame('evolve','./evolve/index.html')"></button></div>
+<div class="card"><h3 data-i18n="kr_title"></h3><p data-i18n="kr_desc"></p><button data-i18n="play" onclick="openGame('kr','./kr/index.html')"></button></div>
+<div class="card"><h3 data-i18n="zm_title"></h3><p data-i18n="zm_desc"></p><button data-i18n="play" onclick="openGame('zm','./zm/index.html')"></button></div>
 </div>
 
 <div class="section-title" data-i18n="mods"></div>
@@ -196,8 +198,7 @@ footer { margin: 40px 0; }
   <div class="card"><h3 data-i18n="early_title"></h3><p data-i18n="early_desc"></p><button data-i18n="play" onclick="openGame('earlyoe','./earlyoe/index.html')"></button></div>
   <div class="card"><h3 data-i18n="v37_title"></h3><p data-i18n="v37_desc"></p><button data-i18n="play" onclick="openGame('v37','./v37/index.html')"></button></div>
   <div class="card"><h3 data-i18n="heroes_title"></h3><p data-i18n="heroes_desc"></p><button data-i18n="play" onclick="openGame('heroes','./heroes/index.html')"></button></div>
-  <div class="card"><h3 data-i18n="pvz3d_title"></h3><p data-i18n="pvz3d_desc"></p><button data-i18n="play" onclick="openGame('pvz3d','./pvz3d/index.html')"></button></div>
-  <div class="card"><h3 data-i18n="wtf_title"></h3><p data-i18n="wtf_desc"></p><button data-i18n="play" onclick="openGame('wtf','./wtf/index.html')"></button></div>
+<div class="card"><h3 data-i18n="wtf_title"></h3><p data-i18n="wtf_desc"></p><button data-i18n="play" onclick="openGame('wtf','./wtf/index.html')"></button></div>
 </div>
 
 <div id="contributorsPanel">
@@ -205,6 +206,13 @@ footer { margin: 40px 0; }
   <iframe class="contributors-iframe" src="./credits/index.html"></iframe>
 </div>
 <div class="overlay" id="overlay"></div>
+<footer>
+<div class="footer-links">
+    <a class="footer-link" target="_blank" href="https://docs.google.com/document/d/1CASrfSApstFxOTG5DsNK49VwQjpr5XYBAuFrdROgaMk/edit">HOW TO VIEW OE ANIMS DOC</a>
+    <a class="footer-link" target="_blank" href="https://docs.google.com/spreadsheets/d/1HrB92k520Ht0BGi6Nw98-734iOe0EY9aj1XPS8kdiUg/edit">OE ARCHIVAL DOC</a>
+    <a class="footer-link" target="_blank" href="https://mega.nz/folder/opwEGZLJ#p-4GvJPo0qHrrGINbyX2Mw/folder/ZhhGBZhb">LOCALHOST GUIDES BY TABLET PRO</a>
+</div>
+</footer>
 
 <div id="fullscreen">
   <div id="now-playing"></div>
@@ -224,7 +232,7 @@ const TEXT = {
     contributors: "Contributors",
     games: "GAMES",
     mods: "MODS",
-    danger: "⚠️ DANGER ZONE ⚠️ These builds were archived from cache and may be incomplete.",
+    danger: "⚠️ DANGER ZONE ⚠️ These builds were archived from cache or broken and may malfunction.",
     play: "Play",
     now: "Now Playing:",
     too_title: "Tower of Overwatch", too_desc: "Kinda a rebrand??",
@@ -240,7 +248,9 @@ const TEXT = {
     v37_title: "v37 OE", v37_desc: "EE-style level picker build.",
     heroes_title: "PVZ2 HEROES", heroes_desc: "Not to be confused with PvZ Heroes, but is a crappy game.",
     pvz3d_title: "PvZ3D", pvz3d_desc: "Not to be confused with PvZ 3, but is a crappy game.",
-    wtf_title: "???", wtf_desc: "WTF"
+    wtf_title: "???", wtf_desc: "WTF",
+    zm_title: "PvZ Mission", zm_desc: "PvZ Mission.",
+    kr_title: "Kamen Rider", kr_desc: "My gah..."
   },
   zh: {
     title: "Berry PVZ 的 PvZ 小程序存档页面！",
@@ -263,7 +273,9 @@ const TEXT = {
     v37_title: "v37 OE", v37_desc: "EE 风格选关。",
     heroes_title: "PVZ2 HEROES", heroes_desc: "不是 PvZ Heroes。",
     pvz3d_title: "PvZ3D", pvz3d_desc: "不要把它和《植物大战僵尸3》混淆，这是一款糟糕的游戏。",
-    wtf_title: "WTF", wtf_desc: "WTF"
+    wtf_title: "WTF", wtf_desc: "WTF",
+    zm_title: "植物大战僵尸任务", zm_desc: "植物大战僵尸任务",
+    kr_title: "假面骑士", kr_desc: "我的天哪",
   }
 };
 const GAME_ZIPS = {
@@ -280,7 +292,9 @@ const GAME_ZIPS = {
   v37: "./v37.zip",
   heroes: "./heroes.zip",
   pvz3d: "./pvz3d.zip",
-  wtf: "./wtf.zip"
+  wtf: "./wtf.zip",
+  kr: "./kr.zip",
+  zm: "./zm.zip"
 };
 
 const frame = document.getElementById("game-frame");
